@@ -3,4 +3,16 @@
 // You will need this in the following stages
 const input = require('sync-input')
 
-console.log("Hello, World!")
+const words = Array.of("python", "java", "swift", "javascript");
+
+const correct = words[Math.floor(Math.random() * words.length)]
+
+console.log("H A N G M A N");
+
+const answer = input("Guess the word: ");
+
+if (answer == correct) {
+    console.log("You survived!");
+} else {
+    console.log("You lost!")
+}
