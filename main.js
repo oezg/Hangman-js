@@ -48,7 +48,7 @@ function play() {
     while (attempts > 0) {
         console.log();
         console.log(clue.join(""));
-        const letter = input("Input a letter: ");
+        const letter = input("Input a letter: ").normalize();
 
         // -- TODO ö, ü, ä, ß should not fail this test
 
